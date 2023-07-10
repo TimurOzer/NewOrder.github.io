@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profesyonel Blog - Anasayfa</title>
+    <title>Profesyonel Blog - İletişim</title>
 </head>
 <body>
     <header>
@@ -20,8 +20,8 @@
     </nav>
 
     <section>
-        <h2>Hoş Geldiniz</h2>
-        <p>Anasayfa içeriği buraya gelecek.</p>
+        <h2>İletişim</h2>
+        <p>İletişim bilgileri ve formu buraya gelecek.</p>
     </section>
 
     <footer>
