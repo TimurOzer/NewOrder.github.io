@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profesyonel Blog - Blog</title>
+    <title>Yeni Düzen Blog - Blog</title>
     <style>
         /* CSS stilleri buraya ekleyin */
         body {
@@ -56,6 +56,19 @@
             color: #ffffff;
         }
 
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            height: 100px;
+widht: 100px;
+            margin-right: 10px;
+        }
+
         section {
             margin: 20px;
             text-align: center;
@@ -75,12 +88,18 @@
             color: #ffffff;
             padding: 10px;
             text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Profesyonel Blog</h1>
+        <div class="logo">
+            <img src="https://raw.githubusercontent.com/TimurOzer/NewOrder.github.io/main/images/YeniD%C3%BCzen.png" alt="Logo">
+            <h1>Yeni Düzen Blog</h1>
+        </div>
     </header>
 
     <nav>
@@ -98,7 +117,7 @@
     </section>
 
     <footer>
-        </p>&copy; 2023 Yeni Düzen Blog. Tüm hakları saklıdır.</p>
+        &copy; 2023 Yeni Düzen Blog. Tüm hakları saklıdır.
     </footer>
 </body>
 </html>
