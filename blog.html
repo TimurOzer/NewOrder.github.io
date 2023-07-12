@@ -83,6 +83,11 @@
             line-height: 1.5;
         }
 
+        .button-container {
+            display: flex;
+            justify-content: flex-start;
+        }
+
         .button {
             background-color: #000000;
             color: #ffffff;
@@ -90,6 +95,7 @@
             border: none;
             cursor: pointer;
             font-size: 16px;
+            flex-grow: 1;
         }
 
         .button:hover {
@@ -126,8 +132,9 @@
 
     <section>
         <h2>İçerikler</h2>
-        
-        <a href="neworder.html" class="button">Yeni Düzen</a>
+        <div class="button-container">
+            <a href="neworder.html" class="button">Yeni Düzen</a>
+        </div>
     </section>
 
     <footer>
