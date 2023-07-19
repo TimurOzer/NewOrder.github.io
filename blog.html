@@ -46,9 +46,9 @@
         }
 
         nav a {
-            text-decoration: none;
             color: #000000;
             padding: 5px;
+            text-decoration: none;
         }
 
         nav a:hover {
@@ -85,7 +85,9 @@
 
         .button-container {
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
+            gap: 20px; /* Butonlar arasındaki boşluğu ayarlayın */
+            margin-bottom: 20px; /* İçeriklerin altındaki boşluğu ayarlayın */
         }
 
         .button {
@@ -96,6 +98,9 @@
             cursor: pointer;
             font-size: 16px;
             flex-grow: 1;
+            text-decoration: none; /* Buton içindeki altı çiziliyi kaldır */
+            text-align: center;
+            display: block;
         }
 
         .button:hover {
@@ -134,6 +139,9 @@
         <h2>İçerikler</h2>
         <div class="button-container">
             <a href="neworder.html" class="button">Yeni Düzen</a>
+        </div>
+        <div class="button-container">
+            <a href="hayatinanlami.html" class="button">Hayatın Anlamı ve Ahlakın Temellendirmesi Üzerine</a>
         </div>
     </section>
 
