@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yeni Düzen İletişim</title>
+    <title>Profesyonel Blog - Hakkımda</title>
     <style>
+        /* CSS stilleri buraya ekleyin */
         body {
             font-family: 'Roboto Condensed', sans-serif;
             margin: 0;
@@ -19,23 +20,6 @@
             margin-bottom: 20px; /* İçeriklerin altındaki boşluğu ayarlayın */
         }
 
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            border-radius: 20px; /* Yuvarlak kenarlar için */
-            background-color: #000000;
-            color: #ffffff;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-            width: 150px; /* Buton genişliği */
-            text-align: center; /* Buton içeriğini ortala */
-        }
-
-        .button:hover {
-            background-color: #ffffff;
-            color: #000000;
-        }
-
         header {
             background-color: #000000;
             color: #ffffff;
@@ -43,8 +27,8 @@
             text-align: center;
         }
 
-        h1, h2, p, label {
-            font-family: 'Roboto Condensed', sans-serif;
+        h1 {
+            margin: 0;
         }
 
         nav {
@@ -69,13 +53,13 @@
 
         nav a {
             text-decoration: none;
-            color: #000000;
+            color: #333;
             padding: 5px;
         }
 
         nav a:hover {
-            background-color: #000000;
-            color: #ffffff;
+            background-color: #333;
+            color: #fff;
         }
 
         section {
@@ -83,43 +67,38 @@
             text-align: center;
         }
 
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        label {
-            margin-bottom: 10px;
-        }
-
-        input,
-        textarea {
-            width: 300px;
-            padding: 5px;
-            margin-bottom: 10px;
-        }
-
-        input[type="submit"] {
-            background-color: #000000;
-            color: #ffffff;
-            cursor: pointer;
-        }
-
         footer {
-            background-color: #000000;
-            color: #ffffff;
+            background-color: #333;
+            color: #fff;
             padding: 10px;
             text-align: center;
-            position: absolute;
+            position: fixed;
             bottom: 0;
+            left: 0;
             width: 100%;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 20px; /* Yuvarlak kenarlar için */
+            background-color: #000000;
+            color: #ffffff;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            width: 150px; /* Buton genişliği */
+            text-align: center; /* Buton içeriğini ortala */
+        }
+
+        .button:hover {
+            background-color: #ffffff;
+            color: #000000;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Yeni Düzen İletişim</h1>
+        <h1>Yeni Düzen</h1>
     </header>
 
     <nav>
@@ -132,19 +111,14 @@
     </nav>
 
     <section>
-        <h2>İletişim</h2>
-        <form action="mailto:timurozer04@gmail.com" method="post" enctype="text/plain">
-            <label for="name">Adınız:</label>
-            <input type="text" id="name" name="name" required>
-            <br>
-            <label for="email">E-posta Adresiniz:</label>
-            <input type="email" id="email" name="email" required>
-            <br>
-            <label for="message">Mesajınız:</label>
-            <textarea id="message" name="message" required></textarea>
-            <br>
-            <input type="submit" class="button" value="Gönder">
-        </form>
+        <h2 style="text-align: center;">Ekonomi</h2>
+        <p>
+           Yeni düzen fikri, yeni bir ideolojik oluşumu simgelemektedir. Artık işlevlerini yerine getiremeyen yozlaşmış demokrasiye yeni bir sistem sunmaktadır. Yeni düzen fikrinin esas amacı ülkenin ve milletin geleceği için yeni bir lider yetiştirmektir. Yetiştirilen lider yasama, yürütme ve yargı yetkilerinin tamamına sahiptir; üstünde başka bir güç yoktur. O, sadece halkına karşı sorumludur. Peki, bu lider nasıl yetiştirilir?
+        </p>
+        <div>
+        <div class="button-container">
+            <div><a href="neworder.html" class="button">Geri Dön</a></div>
+        </div>
     </section>
 
     <footer>
