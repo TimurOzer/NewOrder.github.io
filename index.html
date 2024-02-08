@@ -5,45 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profesyonel Blog - Anasayfa</title>
     <style>
-        /* CSS stilleri buraya ekleyin */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto Condensed', sans-serif;
             margin: 0;
             padding: 0;
             color: #000000;
             background-color: #fff7dd; /* Açık Sarı */
         }
-
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 20px; /* Yuvarlak kenarlar için */
+            background-color: #000000;
+            color: #ffffff;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
         header {
             background-color: #000000;
             color: #ffffff;
             padding: 20px;
             text-align: center;
         }
-
         h1, p {
-            font-family: "Times New Roman", Times, serif;
+            font-family: 'Roboto Condensed', sans-serif;
             margin: 0;
         }
-
         .header-content {
             display: flex;
             align-items: center;
             justify-content: center;
         }
-
         .logo {
             width: 100px;
             height: auto;
             margin-right: 10px;
         }
-
         nav {
             background-color: #ffffff;
             padding: 10px;
             text-align: center;
         }
-
         nav ul {
             list-style-type: none;
             margin: 0;
@@ -52,50 +58,47 @@
             display: flex;
             justify-content: center;
         }
-
         nav li {
             display: inline;
             margin-right: 10px;
         }
-
         nav a {
             text-decoration: none;
             color: #000000;
             padding: 5px;
         }
-
         nav a:hover {
             background-color: #000000;
             color: #ffffff;
         }
-
         section {
             margin: 20px;
             text-align: center;
+            display: flex;
+            justify-content: space-between;
         }
-
+        .hero-text {
+            width: calc(80% - 50px); /* Kenarlardaki boşluklar için */
+            padding: 20px;
+            background-color: #000000; /* Siyah */
+            color: #ffffff;
+            border-radius: 20px; /* Yuvarlak kenarlar için */
+        }
+        .advertisement {
+            width: calc(20% - 50px); /* Kenarlardaki boşluklar için */
+            padding: 20px;
+            background-color: #ffffff; /* Beyaz */
+            border-radius: 20px; /* Yuvarlak kenarlar için */
+        }
         h2 {
             font-size: 24px;
+            margin-bottom: 10px;
         }
-
         p {
             font-size: 18px;
             line-height: 1.5;
+            margin-bottom: 20px;
         }
-
-        .hero-image {
-            width: 100%;
-            height: 100px;
-            max-width: 100px;
-            display: block;
-            margin: 0 auto;
-        }
-
-        .hero-text {
-            text-align: center;
-            padding: 20px;
-        }
-
         footer {
             background-color: #000000;
             color: #ffffff;
@@ -117,25 +120,28 @@
 
     <nav>
         <ul>
-            <li><a href="index.html">Anasayfa</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="about.html">Hakkımda</a></li>
-            <li><a href="contact.html">İletişim</a></li>
+            <li><a href="index.html" class="button">Anasayfa</a></li>
+            <li><a href="blog.html" class="button">Blog</a></li>
+            <li><a href="about.html" class="button">Hakkımda</a></li>
+            <li><a href="contact.html" class="button">İletişim</a></li>
         </ul>
     </nav>
 
     <section>
         <div class="hero-text">
             <h2>Hoş Geldiniz!</h2>
-            <p>Merhaba!bu web sitesini kendi düşüncelerimizin ve fikirlerimizin özgürce ifade edilebildiği bir platform olarak oluşturduk. Burası zihinlerimizde yatan en derin ve karmaşık düşüncelerimizi paylaşabileceğimiz bir alan. Sınırlar ve tabular olmadan, içeriklerimizde hayal gücümüzün sınırlarını zorlayacağız.</p>
+            <p>Merhaba! Bu web sitesini kendi düşüncelerimizin ve fikirlerimizin özgürce ifade edilebildiği bir platform olarak oluşturduk. Burası zihinlerimizde yatan en derin ve karmaşık düşüncelerimizi paylaşabileceğimiz bir alan. Sınırlar ve tabular olmadan, içeriklerimizde hayal gücümüzün sınırlarını zorlayacağız.</p>
             <p>Yazılarımızda, günlük hayatta pek konuşulmayan konuları ele alacak, düşündürebilecek ve tartışmaya açabilecek içerikler sunacağız. Kafa karıştırıcı sorular, felsefi düşünceler, sosyal meseleler ve kişisel deneyimler bu platformda bulunacak. Amacımız sizi düşünmeye teşvik etmek, bakış açınızı genişletmek ve derinlemesine düşünmenizi sağlamaktır.</p>
             <p>Yolculuğumuza sizleri de davet ediyoruz! Bu platformda yer alan yazılarımızı okuyarak düşüncelerimize ve duygularımıza bir pencere açabilirsiniz. Aramıza katılın ve bu farklı ve etkileyici deneyime ortak olun. Umarız sitemizi keşfederken ilham alır, düşünür ve yeni bakış açıları kazanırsınız.</p>
         </div>
+        <div class="advertisement">
+            <img src="https://via.placeholder.com/150" alt="Reklam" style="width: 100%;">
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2023 Yeni Düzen Blog. Tüm hakları saklıdır.</p>
-    </footer>
+    <footer style="position: fixed; bottom: 0; width: 100%;">
+    <p>&copy; 2023 Yeni Düzen Blog. Tüm hakları saklıdır.</p>
+</footer>
+
 </body>
 </html>
-

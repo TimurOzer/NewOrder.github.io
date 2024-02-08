@@ -5,13 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yeni Düzen İletişim</title>
     <style>
-        /* CSS stilleri buraya ekleyin */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto Condensed', sans-serif;
             margin: 0;
             padding: 0;
             color: #000000;
             background-color: #fff7dd; /* Açık Sarı */
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 20px; /* Yuvarlak kenarlar için */
+            background-color: #000000;
+            color: #ffffff;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #ffffff;
+            color: #000000;
         }
 
         header {
@@ -22,7 +36,7 @@
         }
 
         h1, h2, p, label {
-            font-family: "Times New Roman", Times, serif;
+            font-family: 'Roboto Condensed', sans-serif;
         }
 
         nav {
@@ -102,10 +116,10 @@
 
     <nav>
         <ul>
-            <li><a href="index.html">Anasayfa</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="about.html">Hakkımda</a></li>
-            <li><a href="contact.html">İletişim</a></li>
+            <li><a href="index.html" class="button">Anasayfa</a></li>
+            <li><a href="blog.html" class="button">Blog</a></li>
+            <li><a href="about.html" class="button">Hakkımda</a></li>
+            <li><a href="contact.html" class="button">İletişim</a></li>
         </ul>
     </nav>
 
@@ -121,7 +135,7 @@
             <label for="message">Mesajınız:</label>
             <textarea id="message" name="message" required></textarea>
             <br>
-            <input type="submit" value="Gönder">
+            <input type="submit" class="button" value="Gönder">
         </form>
     </section>
 
